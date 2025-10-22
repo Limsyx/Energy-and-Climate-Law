@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Energy & Environmental Law — Limsy X</title>
+  <meta name="description" content="Research and insights on energy & environmental law — focusing on European, French, and Norwegian frameworks, and emerging technologies." />
+  <style>
+    :root {
+      --blue: #0A5AD1;
+      --blue-dark: #0D3C8D;
+      --white: #ffffff;
+      --text: #0f172a;
+      --muted: #4b5563;
+      --radius: 18px;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 16px 0;
+      font-weight: 600;
+    }
+    nav a {
+      color: var(--blue-dark);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--blue);
+    }
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.85)),
+                  url('assets/img/wind-turbines.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      color: var(--blue-dark);
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 720px;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    section:nth-child(even) {
+      background: var(--blue-50);
+    }
+    section h2 {
+      font-size: 2rem;
+      color: var(--blue-dark);
+      margin-bottom: 16px;
+    }
+    section p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-6px); }
+    .card h3 {
+      color: var(--blue-dark);
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .bg-solar {
+      background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.85)),
+                  url('assets/img/solar-panels.jpg') center/cover no-repeat;
+    }
+    .bg-nuclear {
+      background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)),
+                  url('assets/img/nuclear-plant.jpg') center/cover no-repeat;
+    }
+    footer {
+      background: var(--blue-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    footer p { margin: 8px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#fundamentals">Energy Fundamentals</a>
+      <a href="#eu-law">European Law</a>
+      <a href="#fr-law">French Law</a>
+      <a href="#no-law">Norwegian Law</a>
+      <a href="#tech">New Technologies</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Law for the Energy Transition</h1>
+    <p>Understanding the evolving frameworks that guide Europe’s path toward sustainable energy — from policy to practice.</p>
+  </section>
+
+  <section id="fundamentals" class="bg-solar">
+    <h2>Energy Fundamentals</h2>
+    <p>Key principles of energy markets, security of supply, carbon pricing, and externalities shaping the modern transition.</p>
+    <div class="grid">
+      <div class="card"><h3>Energy Mix</h3><p>How countries balance renewables, nuclear, and fossil resources.</p></div>
+      <div class="card"><h3>Carbon Pricing</h3><p>Cap-and-trade (EU ETS) vs carbon taxes: efficiency and fairness.</p></div>
+      <div class="card"><h3>Security of Supply</h3><p>Legal and economic measures to ensure resilient access to energy.</p></div>
+    </div>
+  </section>
+
+  <section id="eu-law" class="bg-nuclear">
+    <h2>European Law</h2>
+    <p>EU frameworks such as the Green Deal, CS3D, CSRD, and Taxonomy guiding sustainability and corporate responsibility.</p>
+    <div class="grid">
+      <div class="card"><h3>Green Deal</h3><p>How EU policy integrates environmental, energy, and industrial goals.</p></div>
+      <div class="card"><h3>CS3D Directive</h3><p>Corporate due diligence obligations across the value chain.</p></div>
+      <div class="card"><h3>Taxonomy</h3><p>Defining what counts as sustainable under EU law.</p></div>
+    </div>
+  </section>
+
+  <section id="tech" class="bg-solar">
+    <h2>New Technologies</h2>
+    <p>Emerging tools transforming the energy sector: AI, IoT, digital twins, and carbon capture.</p>
+    <div class="grid">
+      <div class="card"><h3>AI & Compliance</h3><p>Machine learning to map environmental and human rights risks.</p></div>
+      <div class="card"><h3>IoT & Smart Grids</h3><p>Real-time data for energy efficiency and predictive maintenance.</p></div>
+      <div class="card"><h3>CCUS</h3><p>Legal challenges of carbon capture, storage, and cross-border transport.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Limsy X — Energy & Environmental Law</p>
+    <p>contact@limsyenergy.com</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
